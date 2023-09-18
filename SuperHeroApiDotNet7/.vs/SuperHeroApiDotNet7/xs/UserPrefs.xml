@@ -1,4 +1,37 @@
 ﻿<Properties StartupConfiguration="{C0E9DB9F-110F-46C3-889A-7C5CEA33F626}|https">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SuperHeroApiDotNet7 FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SuperHeroApiDotNet7/Controllers/SuperHeroController.cs">
+    <Files>
+      <File FileName="SuperHeroApiDotNet7/Controllers/WeatherForecastController.cs" />
+      <File FileName="SuperHeroApiDotNet7/Services/SuperHeroService/SuperHeroService.cs" />
+      <File FileName="SuperHeroApiDotNet7/Controllers/SuperHeroController.cs" Line="33" Column="10" />
+      <File FileName="SuperHeroApiDotNet7/Services/SuperHeroService/ISuperHeroService.cs" />
+      <File FileName="SuperHeroApiDotNet7/Program.cs" />
+      <File FileName="SuperHeroApiDotNet7/Data/DataContext.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SuperHeroApiDotNet7">
+            <Node name="SuperHeroApiDotNet7" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="SuperHeroController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="SuperHeroService" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SuperHeroApiDotNet7 PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
