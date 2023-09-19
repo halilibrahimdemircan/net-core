@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nftinithalil/Documents/GitHub/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj": {}
+    "/Users/uguraslan/Desktop/Jobs/GameApi/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj": {}
   },
   "projects": {
-    "/Users/nftinithalil/Documents/GitHub/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj": {
+    "/Users/uguraslan/Desktop/Jobs/GameApi/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nftinithalil/Documents/GitHub/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj",
+        "projectUniqueName": "/Users/uguraslan/Desktop/Jobs/GameApi/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj",
         "projectName": "SuperHeroApiDotNet7",
-        "projectPath": "/Users/nftinithalil/Documents/GitHub/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj",
-        "packagesPath": "/Users/nftinithalil/.nuget/packages/",
-        "outputPath": "/Users/nftinithalil/Documents/GitHub/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/obj/",
+        "projectPath": "/Users/uguraslan/Desktop/Jobs/GameApi/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj",
+        "packagesPath": "/Users/uguraslan/.nuget/packages/",
+        "outputPath": "/Users/uguraslan/Desktop/Jobs/GameApi/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nftinithalil/.nuget/NuGet/NuGet.Config"
+          "/Users/uguraslan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
         }
       }
     }

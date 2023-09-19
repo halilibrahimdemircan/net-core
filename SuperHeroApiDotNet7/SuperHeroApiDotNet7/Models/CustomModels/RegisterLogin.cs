@@ -16,10 +16,10 @@ public class RegisterLoginModels
         public required string Email { get; set; }
         public required string Password { get; set; }
     }
-    public class Response
+    public class Success
     {
         public bool success { get; set; }
         public string? token { get; set; }
-        public string? error_message { get; set; }
+        public string? error_messega { get; set; }
     }
 }
