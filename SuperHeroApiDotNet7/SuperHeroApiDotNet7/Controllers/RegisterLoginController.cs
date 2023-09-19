@@ -20,15 +20,18 @@ namespace SuperHeroApiDotNet7.Controllers
             _registerLoginService = registerLoginService;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<CustomModels.RegisterLoginModels.LoginSuccess>> Login(CustomModels.RegisterLoginModels.Login request)
+        [HttpPost("Login")]
+        public async Task<ActionResult<CustomModels.RegisterLoginModels.Success>> Login(CustomModels.RegisterLoginModels.Login request)
         {
             var result = await _registerLoginService.Login(request);
-            if (result == null)
-                return NotFound("User Not found");
             return Ok(result);
         }
 
-
+        [HttpPost("Register")]
+        public async Task<ActionResult<CustomModels.RegisterLoginModels.Success>> Register(CustomModels.RegisterLoginModels.Register request)
+        {
+            var result = await _registerLoginService.Register(request);
+            return Ok(result);
+        }
     }
 }

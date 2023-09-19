@@ -78,13 +78,17 @@ namespace SuperHeroApiDotNet7.Services.RegisterLogin
 
         }
 
-        public async Task<RegisterLoginModels.LoginSuccess?> Login(RegisterLoginModels.Login request)
+        public async Task<RegisterLoginModels.Success?> Login(RegisterLoginModels.Login request)
         {
+            RegisterLoginModels.Success response = new RegisterLoginModels.Success();
             var isValidEmail = IsValidEmail(request.Email.ToLower());
             if (isValidEmail == false)
-                return null;
+            {
+                response.success = false;
+                response.error_messega = "Email Uygun degil";
+                return response;
+            }
             var user = await _context.GameUsers.Where(x => x.Email == request.Email && x.Password == CalculateMD5Hash(request.Password)).FirstOrDefaultAsync();
-            RegisterLoginModels.LoginSuccess response = new RegisterLoginModels.LoginSuccess();
             if (user != null)
             {
                 var token = GenerateToken(user);
@@ -99,6 +103,54 @@ namespace SuperHeroApiDotNet7.Services.RegisterLogin
                 response.success = false;
                 response.error_messega = "User Bulumadım napıcan";
             }
+            return response;
+        }
+
+        public async Task<RegisterLoginModels.Success?> Register(RegisterLoginModels.Register request)
+        {
+            RegisterLoginModels.Success response = new RegisterLoginModels.Success();
+            var isValidEmail = IsValidEmail(request.Email.ToLower());
+            if (isValidEmail == false)
+            {
+                response.success = false;
+                response.error_messega = "Email Uygun degil";
+                return response;
+            }
+            var user = await _context.GameUsers.FirstOrDefaultAsync(x => x.Email.ToLower() == request.Email);
+            if (user == null)
+            {
+                var newUser = new GameUsers()
+                {
+                    CreatedAt = DateTime.Now,
+                    Email = request.Email,
+                    Password = CalculateMD5Hash(request.Password),
+                    IsDeleted = false,
+                    UpdatedAt = DateTime.Now
+
+                };
+
+                _context.GameUsers.Add(newUser);
+                await _context.SaveChangesAsync();
+
+                var new_token = GenerateToken(newUser);
+                var newUserToken = new GameUserTokens()
+                {
+                    CreatedAt = DateTime.Now,
+                    UserId = newUser.UserId,
+                    IsDeleted = false,
+                    UpdatedAt = DateTime.Now,
+                    Token = new_token
+
+                };
+                _context.GameUserTokens.Add(newUserToken);
+                await _context.SaveChangesAsync();
+
+                response.success = true;
+                response.token = new_token;
+                return response;
+            }
+            response.success = false;
+            response.error_messega = "User var kac kere kayıt olacan";
             return response;
         }
     }
