@@ -11,11 +11,8 @@ namespace SuperHeroApiDotNet7.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=superherodb;Trusted_Connection=true;TrustServerCertificate=true;");
+            optionsBuilder.UseNpgsql("Server=104.247.165.244;Database=game;Username=game_admin;Password=sU8^0338zB!e;");
         }
-
-        public DbSet<SuperHero> SuperHeroes { get; set; }
-
     }
 
 }

@@ -1,6 +1,6 @@
 ﻿global using SuperHeroApiDotNet7.Models;
-global using SuperHeroApiDotNet7.Data;
-using SuperHeroApiDotNet7.Services.SuperHeroService;
+global using SuperHeroApiDotNet7.Services.SuperHeroService;
+global using SuperHeroApiDotNet7.Services.RegisterLogin;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
+builder.Services.AddScoped<IRegisterLogin, RegisterLoginService>();
 builder.Services.AddDbContext<DataContext>();
 
 var app = builder.Build();
