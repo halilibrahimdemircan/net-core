@@ -2,7 +2,7 @@
 {
 	public interface IRegisterLogin
 	{
-		Task<List<GameUsers>?> Login(CustomModels.RegisterLoginModels.Login request);
+		Task<CustomModels.RegisterLoginModels.LoginSuccess?> Login(CustomModels.RegisterLoginModels.Login request);
 	}
 }
 

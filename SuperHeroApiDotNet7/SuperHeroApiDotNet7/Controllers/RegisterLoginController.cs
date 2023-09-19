@@ -21,7 +21,7 @@ namespace SuperHeroApiDotNet7.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<GameUsers>>> Login(CustomModels.RegisterLoginModels.Login request)
+        public async Task<ActionResult<CustomModels.RegisterLoginModels.LoginSuccess>> Login(CustomModels.RegisterLoginModels.Login request)
         {
             var result = await _registerLoginService.Login(request);
             if (result == null)
