@@ -1,5 +1,4 @@
-﻿using System;
-global using Microsoft.EntityFrameworkCore;
+﻿global using Microsoft.EntityFrameworkCore;
 
 namespace SuperHeroApiDotNet7.Data
 {
