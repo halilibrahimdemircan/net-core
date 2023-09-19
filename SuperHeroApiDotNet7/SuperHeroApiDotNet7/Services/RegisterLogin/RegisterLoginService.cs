@@ -12,9 +12,13 @@ namespace SuperHeroApiDotNet7.Services.RegisterLogin
             _context = context;
         }
 
-        List<GameUsers> IRegisterLogin.Login(RegisterLoginModels.Login request)
+        public async Task<List<GameUsers>?> Login(RegisterLoginModels.Login request)
         {
-            throw new NotImplementedException();
+            var result = await _context.GameUsers.Where(x => x.Email == request.Email && x.Password==request.Password).ToListAsync();
+            if (result.Count()==0)
+                return null;
+            return result;
+
         }
     }
 }

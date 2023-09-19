@@ -14,16 +14,19 @@ namespace SuperHeroApiDotNet7.Controllers
     public class RegisterLoginController : ControllerBase
     {
         private readonly IRegisterLogin _registerLoginService;
+
         public RegisterLoginController(IRegisterLogin registerLoginService)
         {
             _registerLoginService = registerLoginService;
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<CustomModels.RegisterLoginModels.Login>>> Login(CustomModels.RegisterLoginModels.Login request)
+        public async Task<ActionResult<List<GameUsers>>> Login(CustomModels.RegisterLoginModels.Login request)
         {
-            var _result = _registerLoginService.Login(request);
-            return Ok(_result);
+            var result = await _registerLoginService.Login(request);
+            if (result == null)
+                return NotFound("User Not found");
+            return Ok(result);
         }
 
 
