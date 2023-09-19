@@ -1,0 +1,2 @@
+﻿// to update and creating models
+dotnet ef dbcontext scaffold "Server=104.247.165.244;Database=game;Username=game_admin;Password=sU8^0338zB!e;"  Npgsql.EntityFrameworkCore.PostgreSQL --output-dir Models --context DataContext -f --no-pluralize

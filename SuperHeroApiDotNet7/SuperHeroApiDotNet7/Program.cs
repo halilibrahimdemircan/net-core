@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
-builder.Services.AddDbContext<DataContext>();
+builder.Services.AddDbContext<SuperHeroApiDotNet7.Data.DataContext>();
 
 var app = builder.Build();
 

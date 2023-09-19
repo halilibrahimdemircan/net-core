@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ka8SF94KovIKWh1phpCgqsWdZAYJ1DWu0bC16rk03IxmOARjvb9mSiLtzbAAuCFJ/l9scfEkZgA/ZxT+qS/mKg==",
+  "dgSpecHash": "usSY8pH7sWIaO/a9nugd/jVc6BKuWSEuWT42lHpQTwHEAd1pPTEPEoJOg3p2YhOxx1x9VJAFb3rgneiC4rMQKw==",
   "success": true,
   "projectFilePath": "/Users/nftinithalil/Documents/GitHub/net-core/SuperHeroApiDotNet7/SuperHeroApiDotNet7/SuperHeroApiDotNet7.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "/Users/nftinithalil/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.11/microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "/Users/nftinithalil/.nuget/packages/microsoft.entityframeworkcore.relational.design/1.1.0/microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
     "/Users/nftinithalil/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.11/microsoft.entityframeworkcore.sqlserver.7.0.11.nupkg.sha512",
+    "/Users/nftinithalil/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.11/microsoft.entityframeworkcore.tools.7.0.11.nupkg.sha512",
     "/Users/nftinithalil/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/nftinithalil/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/nftinithalil/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
